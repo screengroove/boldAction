@@ -85,12 +85,19 @@ var PATHS = {
   ]
 };
 
+// register the browsersync plugin to inject snippet
+browserSync.use(require('bs-snippet-injector'), {
+    // path to the file containing the closing </body> tag
+    file: 'footer.php'
+});
+
 // Browsersync task
 gulp.task('browser-sync', ['build'], function() {
 
   var files = [
             '**/*.php',
             'assets/images/**/*.{png,jpg,gif}',
+            'assets/scss/*.scss'
           ];
 
   browserSync.init(files, {

@@ -1,0 +1,49 @@
+.block-title{
+  text-align: center;
+  h2{
+    color: $black;
+    span{
+      font-family: $font-bold;
+      color: $blue;
+    }
+  }
+}
+
+
+.gray-block{
+  width: 100%;
+  padding: 2rem;
+  background-color: $light-gray;
+}
+
+
+.mission-block{
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $blue;
+  color: $white;
+  h1{
+    letter-spacing: 3px;
+    span{
+      font-family: $font-bold;
+    }
+  }
+  >img{
+    position: absolute;
+    bottom: 0 ; left: 0;
+  }
+   @include breakpoint(large) {
+     padding: 6rem;
+     h1{
+        font-size: rem-calc(60);
+        margin-bottom: 3rem;
+     }
+     p{
+       font-size: rem-calc(20);
+     }
+   }
+}
