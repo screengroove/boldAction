@@ -18,3 +18,24 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'gibsonregular';
+    src: url('./../fonts/gibson_regular-webfont.woff2') format('woff2'),
+         url('./../fonts/gibson_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gibsonsemibold';
+    src: url('./../fonts/gibson_semibold-webfont.woff2') format('woff2'),
+         url('./../fonts/gibson_semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

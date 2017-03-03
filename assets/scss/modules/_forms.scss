@@ -16,10 +16,15 @@
   }
   input[type="submit"]{
     height: 50px;
+    line-height: 50px;
      padding: 0 2rem;
     border-radius: 30px;
     border: none;
     background-color: $blue;
     color: $white;
+    transition: all .2s ease;
+    &:hover{
+      background-color: darken($blue, 10%);
+    }
   }
 }

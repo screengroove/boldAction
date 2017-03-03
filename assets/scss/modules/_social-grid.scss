@@ -1,0 +1,33 @@
+.social-grid{
+  // @extend .contain;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.social-grid_item{
+  min-height: 300px;
+  width: 33%;
+  padding: 2rem;
+  background-color: $light-gray;
+  text-align: center; 
+  &.is-light{
+    background-color: $faint-gray;
+  }
+  .fa{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.social-grid_content{
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 1.3rem;
+  line-height: 1.1;
+}
+
+#simple-instagram-wrap .simple-instagram-list .simple-instagram-list-item {
+  margin: 0;
+  width: 100%;
+}

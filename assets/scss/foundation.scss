@@ -19,15 +19,15 @@
 @import "global/accessibility";
 
 // Third-party libraries
-// @import 'font-awesome';
+@import 'font-awesome';
 // @import 'motion-ui';
 
 // Foundation global styles
 @include foundation-global-styles;
 
 // Individual foundation components
-@include foundation-grid;
-@include foundation-flex-grid;
+//@include foundation-grid;
+//@include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-forms;
 @include foundation-button;
@@ -76,6 +76,7 @@
 
 // Global
 @import "global/fonts";
+@import "global/text";
 
 // Modules
 @import "modules/navigation";
@@ -86,6 +87,10 @@
 @import "modules/hero";
 @import "modules/forms";
 @import "modules/image-grid";
+@import "modules/news-grid";
+@import "modules/social-grid";
+@import "modules/facts";
+@import "modules/profile";
 
 // Components
 @import "components/buttons";

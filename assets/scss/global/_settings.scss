@@ -47,7 +47,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(1600);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #1779ba,
@@ -56,10 +56,11 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
+$faint-gray: #fafafa;
 $light-gray: #eeeeee;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
+$black: #232323;
 $white: #fefefe;
 $blue: #3573b9;
 $outer-space: #2c3840;
@@ -107,6 +108,7 @@ $block-grid-max: 8;
 // ------------------
 $font-light: "gibsonlight";
 $font-bold: "gibsonbold";
+$font-reg: "gibsonregular";
 $header-font-family: $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
