@@ -21,7 +21,7 @@
 <div class="spacer"></div>
   <!-- MISSION TEMPLATE PART -->
   <?php get_template_part( 'template-parts/home-mission' ); ?>
-  <div class="spacer"></div>
+  
 
   <!-- CANDIDATES TEMPLATE PART -->
   <?php get_template_part( 'template-parts/home-candidates' ); ?>

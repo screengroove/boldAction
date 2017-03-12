@@ -1,5 +1,45 @@
 .footer-block{
   width: 100%;
   min-height: 200px;
+  height: 200px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
   background-color: $blue;
+}
+
+.sub-footer{
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  font-size: .8rem;
+  .nav-wrap > span {
+    display: block;
+    width: 33%;
+    &.ft-left{
+      text-align: left;
+    }
+    &.ft-ctr{
+      text-align: center;
+    }
+    &.ft-right{
+      text-align: right;
+    }
+  }
+  a{
+    color: $white;
+    margin-right: 1rem;;
+  }
+}
+
+.attribution{
+  width: 100%;
+  padding-top: 1rem;
+  text-align: center;
+  span{
+    max-width: 300px;
+    display: inline-block;
+    font-size: .8rem;
+  }
 }

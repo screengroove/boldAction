@@ -16,10 +16,11 @@
     }
 }
 
+
 .nav-fixed.is-sticky{
-   height: 60px;
+   height: 70px;
   background-color: $white;
-  padding: 0;
+   padding: 0 2rem;
   box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.17);
   z-index: 100;
 }//is-sticky
@@ -30,6 +31,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2rem;
   .nav-brand{
     transform: scale(0.7);
     transition: transform .5s ease;
@@ -75,6 +77,22 @@
 .is-sticky .nav-brand{
   opacity: 1;
   transform: translateX(0);
+}
+
+.nav-footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    transition: all .3s ease;
+    z-index: 100;
+    @include breakpoint(medium) {
+      padding: 1rem;
+    }
+}
+
+.nav-footer .nav-links > a:hover{
+  color: darken($blue, 20%);
 }
 
 

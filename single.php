@@ -8,26 +8,41 @@
 
 get_header(); ?>
 
-<?php get_template_part( 'template-parts/featured-image' ); ?>
+ <div class="mission-block">
+   <?php get_template_part( 'template-parts/nav-fixed' ); ?>
+  <h1 class="title-bold"><span>NEWS</span></h1>
+  <img src="<?php bloginfo('template_directory'); ?>/assets/images/stripes.png" alt="">
+</div>
 
-<div id="single-post" role="main">
+<section class="ltgray-block">
+  <div class="news-block">
+    <div class="news-block_photo" style="background-image: url( <?php echo the_post_thumbnail_url( 'full' ) ?> )">
+    </div>
+          <?php do_action( 'foundationpress_before_content' ); ?>
+    <?php while ( have_posts() ) : the_post(); ?>
+    <div class="news-block_deetsWrap">
 
-<?php do_action( 'foundationpress_before_content' ); ?>
-<?php while ( have_posts() ) : the_post(); ?>
-	<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
-		<header>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<?php foundationpress_entry_meta(); ?>
-		</header>
-		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
-		<div class="entry-content">
-			<h1>YO</h1>
-			<?php the_content(); ?>
-			<?php edit_post_link( __( 'Edit', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
-		</div>
-		<?php the_post_navigation(); ?>
+        <h3 class="news-name"><?php the_title() ?></h3>
+      <div class="news-block_deets">
+        <p class="nb-meta"><i class="fa fa-user" aria-hidden="true"></i><?php the_author(); ?> </p>
+         <p class="nb-meta"><i class="fa fa-clock-o" aria-hidden="true"></i> <?php the_time('F j, Y'); ?></p>
+         <?php pvc_post_views(  ); ?>
+      </div>
+     
+    </div>
+  </div>
+  <div class="news-block_bio">
 
-	</article>
-<?php endwhile;?>
+          <p><?php the_content(); ?></p>
+        <?php do_action( 'foundationpress_post_before_entry_content' ); ?>
+  <?php endwhile;?>
+  </div>  
+</section>
 
-<?php get_footer();
+   <!-- CTA TEMPLATE PART -->
+ <?php get_template_part( 'template-parts/home-cta' ); ?>
+ <div class="spacer"></div>
+
+
+
+

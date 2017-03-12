@@ -1,0 +1,65 @@
+.news-block{
+  // width: 100%;
+  // max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: $white;;
+
+}
+
+.news-block_photo{
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+   border-radius: 4px;
+}
+.news-block_deetsWrap{
+   width: 400px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $white;
+  text-align: center;
+  .nb-meta{
+     text-align: left;
+    >i{
+      padding-right: 7px;
+    }
+  }
+  .entry-meta{
+    text-align: left;
+  }
+}
+
+.news-block_deets{
+  padding: 1.5rem;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+.news-name{
+  font-family: $font-bold;
+  margin-bottom: 2rem;
+}
+.news-donate{
+  >img{
+  max-width: 200px;
+  }
+}
+.district-code{
+  font-size: 3rem;
+  color: darken(#eeeeee, 15%);
+  
+}
+
+.news-url{
+  margin-top: 2rem;
+}
+
+.news-block_bio{
+  max-width: 800px;
+  margin: 1rem auto;
+}
