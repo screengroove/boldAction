@@ -5,3 +5,124 @@
     padding-left: .5rem;;
   }
 }
+
+.btn-follow{
+  padding: .5rem 1rem;
+  border: 1px solid $blue;
+  border-radius: 30px;
+  color: $blue;
+  transition: all .2s ease-in-out;
+  align-self: center;
+  >.fa{
+    margin-left: .25rem;
+  }
+  &:hover{
+    color: $white;
+    background-color: $blue;
+  }
+}
+.btn-round{
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    padding: 0 2rem;
+    border-radius: 30px;
+    border: none;
+    background-color: $blue;
+    color: $white;
+    font-size: 1.3rem;
+    transition: all .2s ease;
+    outline: none;
+    -webkit-appearance: none;
+    transition: all .2s ease-in-out;
+    &:hover{
+      background-color: darken($blue, 10%);
+      color: $white;
+    }
+}
+
+ .ribbon {
+    display:inline-block;
+    position:relative;
+    width:180px;
+    height:40px;
+    padding-top:0px;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    text-decoration:none;
+    cursor:pointer;
+    transition: all 0.1s ease;
+    &:hover{
+        text-decoration: none !important;
+    }
+}
+.ribbon .btn {
+    width:75%;
+    height:40px;
+    margin:0 auto;
+    border-radius:5px;
+    background-color:$blue;
+    line-height:40px;
+    text-align:center;
+    font-size:1em;
+    font-weight:400;
+    text-transform:uppercase;
+    color:white;
+    text-shadow: 0px 2px rgba(0, 0, 0, 0.4);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: all 0.1s ease;
+}
+.btn:before, .btn:after {
+    content:"";
+    display:block;
+    position:absolute;
+    width:25%;
+    height:0;
+    top:7px;
+    border-top: 14px solid darken($blue, 10%);
+    border-bottom: 14px solid darken($blue, 10%);
+    transform:rotate(360deg);
+    z-index:-1;
+    transition: all 0.2s ease;
+}
+.btn:before {
+    left:0px;
+    border-left:6px solid rgba(255, 255, 255, 0);
+}
+.btn:after {
+    right:0px;
+    border-right:6px solid rgba(255, 255, 255, 0);
+}
+/*Colors*/
+ .ribbon.white .btn {
+    background-color:$white;
+    color: $blue;
+    text-shadow: none;
+}
+.ribbon.white .btn:before, .ribbon.white .btn:after {
+    border-top-color:darken($white, 10%);
+    border-bottom-color:darken($white, 10%);
+}
+
+/*Hover*/
+//  .ribbon:hover {
+//     padding-top:0;
+// }
+.ribbon:hover .btn {
+    height:40px;
+   // width:75%;
+    line-height:40px;
+    font-size:1.0em;
+    //transform: scale(1.01);
+    top:0px;
+    text-decoration: none;
+}
+.ribbon:hover .btn:before {
+    left:5%;
+    //transform: translateX(5%);
+}
+.ribbon:hover .btn:after {
+    right:5%;
+     //transform: translateX(5%);
+}

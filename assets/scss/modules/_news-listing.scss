@@ -1,0 +1,18 @@
+
+
+.news-list{
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.news-listing-item{
+  margin-bottom: 2rem;
+  border-bottom: 1px solid $light-gray;
+  h3{
+    color: $blue;
+  }
+}
+
+.news-listing_deets{
+  padding:1rem 0 2rem 0;
+}

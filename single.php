@@ -22,11 +22,11 @@ get_header(); ?>
     <?php while ( have_posts() ) : the_post(); ?>
     <div class="news-block_deetsWrap">
 
-        <h3 class="news-name"><?php the_title() ?></h3>
       <div class="news-block_deets">
-        <p class="nb-meta"><i class="fa fa-user" aria-hidden="true"></i><?php the_author(); ?> </p>
+         <h3 class="news-name"><?php the_title() ?></h3>
+        <!--<p class="nb-meta"><i class="fa fa-user" aria-hidden="true"></i><?php the_author(); ?> </p>-->
          <p class="nb-meta"><i class="fa fa-clock-o" aria-hidden="true"></i> <?php the_time('F j, Y'); ?></p>
-         <?php pvc_post_views(  ); ?>
+         <!--<?php pvc_post_views(  ); ?>-->
       </div>
      
     </div>
@@ -42,6 +42,11 @@ get_header(); ?>
    <!-- CTA TEMPLATE PART -->
  <?php get_template_part( 'template-parts/home-cta' ); ?>
  <div class="spacer"></div>
+
+    <!-- FOOTER TEMPLATE PART -->
+ <?php get_template_part( 'template-parts/home-footer' ); ?>
+
+ <?php get_footer();
 
 
 

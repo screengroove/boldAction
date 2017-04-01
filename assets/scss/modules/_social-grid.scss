@@ -8,13 +8,16 @@
 .social-grid_item{
   min-height: 300px;
   width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 2rem;
   background-color: $light-gray;
   text-align: center; 
   &.is-light{
     background-color: $faint-gray;
   }
-  .fa{
+  >.fa{
     font-size: 3rem;
     margin-bottom: 2rem;
   }
@@ -30,4 +33,9 @@
 #simple-instagram-wrap .simple-instagram-list .simple-instagram-list-item {
   margin: 0;
   width: 100%;
+  padding: 2rem 1rem;
+
+  img{
+    max-height: 280px;
+  }
 }

@@ -14,23 +14,40 @@
   height: 350px;
   background-size: cover;
   background-position: center center;
-  filter: opacity(.5);
   overflow: hidden;
   transition: filter .2s ease, background-position .3s ease;
   opacity: 0;
   figcaption{
+    width: 110%;
+    height: 250px;
     position: absolute;
-    bottom: 10px ; left: 10px;
-    transform: scale(2);
-    opacity: 0;
-    transform-origin: 50% 50%;
-    transition: transform .2s ease;
+    bottom: -113px ; left: -20px;
+    transform: rotate(6deg) translateY(53%);
+    background-color:rgba($blue, 0.5);
+    transform-origin: right;
+    transition: transform .3s ease-in-out, background-color .25s ease-in-out;
+    p, em{
+      color: $white;
+       transform: rotate(-6deg) translateX(30px);
+       font-weight: 600;
+    }
+    em{
+      display: inline-block;
+      font-style: normal;
+      margin-top: 10px ;
+      font-size: .9rem;
+      padding-left: 4px;
+    }
   }
   &:hover{
-    filter: opacity(1);
     figcaption{
-      transform: scale(1);
+      background-color:$white;
+      transform:rotate(3deg) translateY(30%);
       opacity: 1;
+      p,em{
+        color: $blue;
+          transform: rotate(-3deg) translateX(30px);
+      }
     }
     .hover-link{
       transform: translate3d(-50%, -50%, 0);
@@ -51,7 +68,8 @@
   text-align: center;
   transition: transform .3s ease-in-out;
   >i{
-    font-size: 2rem;
+    font-size: 1.2rem;
+    padding-left: 4px;
     vertical-align: middle;
   }
 }
@@ -62,32 +80,39 @@
   height: 250px;
   background-size: cover;
   background-position: center center;
-  //filter: grayscale(1);
   transition: filter .2s ease, background-position .3s ease;
   overflow: hidden;
+  opacity: 0;
   figcaption{
     width: 110%;
     height: 250px;
     position: absolute;
-    bottom: -123px ; left: -20px;
-    transform: rotate(10deg) translateY(50%);
+    bottom: -113px ; left: -20px;
+    transform: rotate(6deg) translateY(49%);
     background-color:rgba($blue, 0.5);
     transform-origin: right;
-    // opacity: 0;
     transition: transform .3s ease-in-out, background-color .25s ease-in-out;
-    p{
+    p, em{
       color: $white;
-       transform: rotate(-10deg) translateX(30px);
+       transform: rotate(-6deg) translateX(30px);
        font-weight: 600;
+    }
+    em{
+      display: inline-block;
+      font-style: normal;
+      font-size: .9rem;
+      padding-left: 4px;
     }
   }
   &:hover{
     filter: grayscale(0);
     figcaption{
+      transform:rotate(3deg) translateY(30%);
       background-color:$white;
       opacity: 1;
-      p{
+      p,em{
         color: $blue;
+          transform: rotate(-3deg) translateX(30px);
       }
     }
     .hover-link{

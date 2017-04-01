@@ -1,6 +1,6 @@
-<section data-scroll-index="1" class="gray-block">
+<section id="member-section" class="gray-block">
   <div class="block-title">
-    <h2>The <span>BOLD</span> PAC(K)</h2>
+    <h2>The <span>BOLD</span> PAC</h2>
     <p>Current Members</p>
   </div>
   <!-- CANDIDATES IMAGE GRID -->

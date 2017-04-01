@@ -15,6 +15,7 @@
   justify-content: space-between;
   font-size: .8rem;
   .nav-wrap > span {
+    font-size: .8rem;
     display: block;
     width: 33%;
     &.ft-left{
@@ -22,6 +23,7 @@
     }
     &.ft-ctr{
       text-align: center;
+      margin-bottom: 0;
     }
     &.ft-right{
       text-align: right;
@@ -38,8 +40,10 @@
   padding-top: 1rem;
   text-align: center;
   span{
-    max-width: 300px;
+    max-width: 470px;
     display: inline-block;
+    padding: 5px;
     font-size: .8rem;
+    border: 1px solid $dark-gray;
   }
 }

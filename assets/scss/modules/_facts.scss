@@ -11,16 +11,7 @@
 .fact{
   position: relative;
   text-align: center;
-  h2{
-    color: $white;
-    font-family: $font-bold;
-    margin-bottom: 2rem;
-  }
-  >img{
-    position: absolute;
-    top: 50% ; left: 50%;
-    transform: translate3d(-50%, -75%, 0);
-  }
+  opacity: 0;
 }
 
 .fact-title{

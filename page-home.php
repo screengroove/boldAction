@@ -23,9 +23,7 @@
   <?php get_template_part( 'template-parts/home-mission' ); ?>
   
 
-  <!-- CANDIDATES TEMPLATE PART -->
-  <?php get_template_part( 'template-parts/home-candidates' ); ?>
-  <div class="spacer"></div>
+
 
     <!-- SOCIAL TEMPLATE PART -->
   <?php get_template_part( 'template-parts/home-social' ); ?>
@@ -39,6 +37,10 @@
   <?php get_template_part( 'template-parts/home-members' ); ?>
   <div class="spacer"></div>
 
+    <!-- CANDIDATES TEMPLATE PART -->
+  <?php get_template_part( 'template-parts/home-candidates' ); ?>
+  <div class="spacer"></div>
+
    <!-- FAST FACTS TEMPLATE PART -->
   <?php get_template_part( 'template-parts/home-facts' ); ?>
   <div class="spacer"></div>
@@ -49,12 +51,6 @@
 
   <!-- FOOTER TEMPLATE PART -->
  <?php get_template_part( 'template-parts/home-footer' ); ?>
-
-
-
-
-
-
 
 
 

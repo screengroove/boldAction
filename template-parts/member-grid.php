@@ -1,13 +1,13 @@
     <?php
-      //const POSTS_PER_PAGE = 20;
+ 
       $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
       $query = new Wp_Query(array(
        'post_type' => "members",
        'paged' => $paged,
        'orderby'=> 'menu_order',
-       'order'=>'ASC'
-      //  'posts_per_page' => POSTS_PER_PAGE
+       'order'=>'ASC',
+       'posts_per_page' => 100
       ));
     ?>
 

@@ -1,6 +1,6 @@
-<section  data-scroll-index="0" class="ltgray-block">
+<section  id="news-section" class="ltgray-block">
   <div class="block-title">
-    <h2>NEWS</h2>
+    <h2>Latest<span> NEWS</span></h2>
   </div>
   <!-- CANDIDATES IMAGE GRID -->
   <?php get_template_part( 'template-parts/news-grid' ); ?>

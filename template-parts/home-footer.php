@@ -1,14 +1,15 @@
 
-<footer class="footer-block">
+<footer class="footer-block" id="footer">
  <!-- NAV TEMPLATE PART -->
  <?php get_template_part( 'template-parts/nav-footer' ); ?>
  <div class="sub-footer">
    <div class="nav-wrap">
      <span class="ft-left">
        <a href="">Privacy Policy</a>
-        <a href="">Contact Us</a>
      </span>
-     <small class="ft-ctr">Site by: <a href="http://www.kullyhallstruble.com/" target="_blank">Kelly Hull Struble</a></small>
+      <span class="ft-ctr"> 
+        Site by <a href="http://lefthookcomms.com/" target="_blank">Left Hook</a>
+      </span>
      <span class="ft-right"> </span>
     </div>
  </div>

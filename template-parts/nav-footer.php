@@ -2,9 +2,9 @@
   <div class="nav-wrap">
    <span></span>
     <div class="nav-links">
-      <a href="#" >News</a>
-      <a href="#" >Candidates</a>
-      <a href="#" >Members</a> 
+      <a href="#news-section">News</a>
+      <a href="#candidate-section" >Candidates</a>
+      <a href="#member-section" >Members</a> 
       <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
       <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
       <a href="" class="btn-donate">

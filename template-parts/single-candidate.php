@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Members Detail
+ * Template Name: Candidate Detail
  * Description: Will be Homepage
- * Template Post Type: members
+ * Template Post Type: candidates
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages and that
@@ -17,7 +17,7 @@
 
  <div class="mission-block">
    <?php get_template_part( 'template-parts/nav-fixed' ); ?>
-  <h1 class="title-bold"><span>BOLD</span>MEMBER</h1>
+  <h1 class="title-bold">CERTIFIED <span>BOLD</span></h1>
   <img src="<?php bloginfo('template_directory'); ?>/assets/images/stripes.png" alt="">
 </div>
 
@@ -28,13 +28,13 @@
     <div class="profile-block_deetsWrap">
 
       <div class="profile-block_deets">
+        <div class="district-code"><?php the_field('district'); ?></div>
         <h3 class="profile-name"><?php the_title() ?></h3>
-        <p><?php the_field('organizational_role'); ?></p>
-        <a href="<?php the_field('member_donation_link'); ?>" target="_blank" class="btn-round">
-          DONATE
+        <a href="<?php the_field('donateLink'); ?>" target="_blank" class="profile-donate">
+          <img src="<?php bloginfo('template_directory'); ?>/assets/images/donate_dk.png" alt="">
         </a>
       </div>
-      <a href="<?php the_field('member_personal_website'); ?>" target="_blank" class="profile-url">Visit Members's Campaign Site</a>   
+      <a href="<?php the_field('donateLink'); ?>" target="_blank" class="profile-url">Visit Candidates Website</a>   
     </div>
   </div>
   <div class="profile-block_bio">
@@ -50,7 +50,7 @@
  <?php get_template_part( 'template-parts/home-cta' ); ?>
  <div class="spacer"></div>
 
-    <!-- FOOTER TEMPLATE PART -->
+   <!-- FOOTER TEMPLATE PART -->
  <?php get_template_part( 'template-parts/home-footer' ); ?>
 
 

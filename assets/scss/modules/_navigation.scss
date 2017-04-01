@@ -18,10 +18,9 @@
 
 
 .nav-fixed.is-sticky{
-   height: 70px;
+   height: 50px;
   background-color: $white;
    padding: 0 2rem;
-  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.17);
   z-index: 100;
 }//is-sticky
 
@@ -51,11 +50,29 @@
     color: $white;
     i{
       font-size: 1.5rem;
+      vertical-align: middle;
     }
     &:hover{
       color: $blue;
     }
   }
+}
+.nav-fixed{
+  .nav-links{
+  a{
+    font-family: $font-reg;
+    margin-left: 1.5rem;
+    color: $white;
+    i{
+      font-size: 1.5rem;
+      vertical-align: middle;
+    }
+    &:hover{
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+}
 }
 
 .is-sticky .nav-links{
@@ -68,7 +85,7 @@
 }
 
 .nav-brand{
-  max-height: 40px;
+  max-height: 30px;
   opacity: 0;
   transform: translateX(200px);
   transition: transform .5s ease;

@@ -18,7 +18,7 @@
 <div class="spacer"></div>
 <section data-scroll-index="1" id="candidate-section" class="gray-block">
   <div class="block-title">
-    <h2>Certified <span>BOLD</span></h2>
+    <h2><span>BOLD</span> Candidates </h2>
     <p>Endorsed Candidates</p>
   </div>
   <!-- CANDIDATES IMAGE GRID -->
