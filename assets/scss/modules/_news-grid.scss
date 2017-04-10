@@ -3,12 +3,18 @@
   @extend .contain;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
+  @include breakpoint(medium) {
+    flex-direction: row;
+  } 
 }
 
 .news-grid_item{
   position: relative;
-  width: 30%;
+  width: 100%;
+  margin-bottom: 1rem;
   background-color:$light-gray;
   border-radius: 4px;
   overflow: hidden;
@@ -28,6 +34,10 @@
     .news-grid_deets{
       h3{color: $blue}
     }
+  }//hover
+  @include breakpoint(medium) {
+    width: 30%;
+    margin-bottom: 0;
   }
 }
 

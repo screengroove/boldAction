@@ -21,10 +21,8 @@
 <div class="spacer"></div>
   <!-- MISSION TEMPLATE PART -->
   <?php get_template_part( 'template-parts/home-mission' ); ?>
+  <div class="spacer"></div>
   
-
-
-
     <!-- SOCIAL TEMPLATE PART -->
   <?php get_template_part( 'template-parts/home-social' ); ?>
   <div class="spacer"></div>

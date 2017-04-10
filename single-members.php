@@ -34,7 +34,7 @@
           DONATE
         </a>
       </div>
-      <a href="<?php the_field('member_personal_website'); ?>" target="_blank" class="profile-url">Visit Members's Campaign Site</a>   
+      <a href="<?php the_field('member_personal_website'); ?>" target="_blank" class="profile-url">Visit Member's Campaign Site</a>   
     </div>
   </div>
   <div class="profile-block_bio">

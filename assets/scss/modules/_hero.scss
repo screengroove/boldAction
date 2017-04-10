@@ -1,9 +1,7 @@
-.billboard{
+.billboard {
     position: relative;
     width: 100%;
-    height: 350px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,42 +11,53 @@
     background-repeat: no-repeat;
     @include breakpoint(medium) {
         height: 615px;
-        background-size: cover;
+        padding-left: 0;
+        padding-right: 0;
     }
     @include breakpoint(large) {
         height: 90vh;
         //background-size: contain;
     }
-    .credit{
+    .credit {
         position: absolute;
-        bottom: 0; right: 20px;
+        bottom: 0;
+        right: 20px;
         font-family: $font-reg;
         color: $white;
     }
 }
 
-.skrim{
+.skrim {
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 0 ;left: 0;
-    background-color:rgba($black, 0.95);
+    top: 0;
+    left: 0;
+    background-color: rgba($black, 0.95);
 }
 
-.hero-brand{
+.hero-brand {
+    width:300px;
     z-index: 10;
-    h1{
+    h1 {
         color: $white;
-        font-size: 4rem;
+        font-size: 2rem;
     }
-    > * {
-        opacity: 0;
+    >* {
+        opacity: 1;
+    }
+    @include breakpoint(medium) {
+        width:auto;
+        h1 {
+            font-size: 4rem;
+        }
     }
 }
 
 .hero-brand_top {
     text-align: left;
 }
+
 .hero-brand_btm {
     text-align: right;
 }
@@ -56,5 +65,8 @@
 #boldBrand {
     opacity: 1;
     transform: scale(0);
-    max-width: 600px;
+    max-width: 97%;
+    @include breakpoint(medium) {
+        max-width: 600px;
+    }
 }

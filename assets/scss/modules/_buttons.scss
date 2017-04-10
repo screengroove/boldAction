@@ -8,9 +8,10 @@
 
 .btn-follow{
   padding: .5rem 1rem;
-  border: 1px solid $blue;
+  margin-top: 1rem;
+  border: 1px solid $white;
   border-radius: 30px;
-  color: $blue;
+  color: $white;
   transition: all .2s ease-in-out;
   align-self: center;
   >.fa{

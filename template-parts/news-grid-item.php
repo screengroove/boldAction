@@ -9,8 +9,10 @@ $urls = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 56
    </a>
   <div class="news-grid_deets">
     <div>
+     <a  href="<?php the_permalink() ?>">
     <h3><?php the_title() ?></h3>
-    <p><?php $content = get_the_content(); echo mb_strimwidth($content, 0, 150, '...');?>  </p>
+    </a>
+    <p><?php $content = get_the_content(); echo mb_strimwidth($content, 0, 70, '...');?>  </p>
     </div>
       <div class="news-grid_meta">
     <span>

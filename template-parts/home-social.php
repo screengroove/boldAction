@@ -1,23 +1,23 @@
-<section id="social" class="white-block" style="background-color: #fafafa">
+<section id="social" >
   <div class="social-grid">
-    <div class="social-grid_item">
+    <div class="social-grid_item fb">
      <i class="fa fa-facebook" aria-hidden="true"></i>
      <div class="social-grid_content">
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+       <p>
+         <?php echo do_shortcode('[custom-facebook-feed]'); ?>
+       </p>
      </div>
-     <button class="btn-follow">Follow<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+     <a href="https://www.facebook.com/chcboldpac/" target="_blank" class="btn-follow">Like Page<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
     </div>
-    <div class="social-grid_item is-light">
-     <i class="fa fa-instagram" aria-hidden="true"></i>
-     <?php simple_instagram(1, false); ?>
-      <button class="btn-follow">Follow<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-    </div>
-    <div class="social-grid_item">
+
+    <div class="social-grid_item twitter">
       <i class="fa fa-twitter" aria-hidden="true"></i>
       <div class="social-grid_content">
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+       <p>
+        <?php echo do_shortcode('[statictweets skin="simplistic" resource="usertimeline" user="chcboldpac" list="" query="" id="" count="1" retweets="on" replies="on" ajax="off" show=""]'); ?>
+       </p>
      </div>
-      <button class="btn-follow">Follow<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+      <a href="https://twitter.com/CHCBOLDPAC/" target="_blank" class="btn-follow">Follow Page<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
     </div>
   </div>
 </section>

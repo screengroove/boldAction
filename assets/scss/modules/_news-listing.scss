@@ -8,8 +8,12 @@
 .news-listing-item{
   margin-bottom: 2rem;
   border-bottom: 1px solid $light-gray;
+  h6{
+    margin-bottom: 1rem;
+  }
   h3{
     color: $blue;
+    font-weight: 600;
   }
 }
 

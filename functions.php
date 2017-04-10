@@ -48,14 +48,25 @@ require_once( 'library/sticky-posts.php' );
 require_once( 'library/responsive-images.php' );
 
 function get_excerpt(){
-$excerpt = get_the_content();
-$excerpt = preg_replace(" ([.*?])",'',$excerpt);
-$excerpt = strip_shortcodes($excerpt);
-$excerpt = strip_tags($excerpt);
-$excerpt = substr($excerpt, 0, 5);
-$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
-$excerpt = trim(preg_replace( '/s+/', ' ', $excerpt));
-return $excerpt;
+  $excerpt = get_the_content();
+  $excerpt = preg_replace(" ([.*?])",'',$excerpt);
+  $excerpt = strip_shortcodes($excerpt);
+  $excerpt = strip_tags($excerpt);
+  $excerpt = substr($excerpt, 0, 5);
+  $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+  $excerpt = trim(preg_replace( '/s+/', ' ', $excerpt));
+
+  return $excerpt;
+}
+
+add_action('wp_print_styles', 'my_deregister_styles', 100);
+
+function my_deregister_styles() {
+  	wp_dequeue_style('cff-font-awesome');
+
+	// PLUGIN Remove Twitter Feed Style
+	wp_dequeue_style('twitterfeed');
+	wp_dequeue_script('twitter-vine-embed');
 }
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */

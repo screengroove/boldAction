@@ -3,10 +3,14 @@
   // max-width: 1000px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 2rem;
-  background-color: $white;;
+  background-color: $white;
 
+  @include breakpoint(medium) {
+
+  }
 }
 
 .profile-block_photo{
@@ -17,9 +21,12 @@
 }
 .profile-block_deetsWrap{
    width: 400px;
-  padding: 2rem;
+  padding: 1rem 0;
   background-color: $white;
   text-align: center;
+  @include breakpoint(medium) {
+    padding: 2rem;
+  }
 }
 
 .profile-block_deets{
