@@ -25,7 +25,7 @@ $urls = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 56
 </svg>
 </button>
 </form>
-<p class="credit">by CHC BOLD PACK</p>
+<p class="credit">by CHC BOLD PAC</p>
 
 
 

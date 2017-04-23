@@ -43,6 +43,12 @@
     text-align: left;
     font-size: 1.3rem;
     line-height: 1.1;
+    a{
+        color: $white !important;
+        &:hover{
+            color: darken($white, 5%);
+        }
+    }
 }
 
 .social-grid_item {
@@ -64,4 +70,5 @@
       border: none;
     }
     .cff-more, .cff-less{display: none;}
+    .preg-links{color: darken(#0084b4, 15%)}
 }

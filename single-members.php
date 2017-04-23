@@ -34,7 +34,9 @@
           DONATE
         </a>
       </div>
-      <a href="<?php the_field('member_personal_website'); ?>" target="_blank" class="profile-url">Visit Member's Campaign Site</a>   
+      <?php if( get_field('member_personal_website') ): ?>
+        <a href="<?php the_field('member_personal_website'); ?>" target="_blank" class="profile-url">Visit Member's Campaign Site</a>
+      <?php endif; ?>
     </div>
   </div>
   <div class="profile-block_bio">
@@ -43,7 +45,7 @@
           <p><?php the_content(); ?></p>
         <?php do_action( 'foundationpress_post_before_entry_content' ); ?>
   <?php endwhile;?>
-  </div>  
+  </div>
 </section>
 
    <!-- CTA TEMPLATE PART -->
