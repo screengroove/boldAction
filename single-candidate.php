@@ -34,7 +34,9 @@
           DONATE
         </a>
       </div>
-      <a href="<?php the_field('donateLink'); ?>" target="_blank" class="profile-url">Visit Candidate's Website</a>   
+      <?php if( get_field('website_url') ): ?>
+        <a href="<?php the_field('website_url'); ?>" target="_blank" class="profile-url">Visit Candidate's Website</a> 
+      <?php endif; ?>  
     </div>
   </div>
   <div class="profile-block_bio">

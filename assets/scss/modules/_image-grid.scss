@@ -115,7 +115,7 @@
             transform: rotate(-6deg) translateX(30px);
             font-weight: 600;
             font-size: .8rem;
-            ;
+            
         }
         p{
           -webkit-margin-after: 0;
@@ -125,6 +125,7 @@
             max-width: 83%;
             display: inline-block;
             font-style: normal;
+            opacity: 0;
         }
     }
     &:hover {
@@ -137,6 +138,9 @@
             em {
                 color: $blue;
                 transform: rotate(-3deg) translateX(30px);
+            }
+            em{
+                opacity: 1;
             }
         }
         .hover-link {
@@ -158,6 +162,14 @@
     .image-grid_sm,
     .image-grid_item{
         opacity: 1;
+    }
+    .image-grid_sm{
+        figcaption{
+            bottom: -102px;
+            em{
+                opacity: 1;
+            }
+        }
     }
 
 }

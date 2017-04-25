@@ -13,7 +13,7 @@ const facts = $('.fact');
 const donate = $('#ribbon');
 const circle = $('.circle');
 const check = $('.check');
-const postURL = 
+const postURL =
 ' https://boldpac.cp.bsd.net/page/sapi/homepage-signup?source=MS_HP_FR_2017.03.28_X_homepage_X__X__HP';
 const isMobile = false;
 
@@ -24,7 +24,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 }
 
 /*==========  HERO ANIMATION ON LOAD  ==========*/
- window.setTimeout( () =>{   
+ window.setTimeout( () =>{
   bold.velocity("transition.expandIn", { stagger: 400 })
   skrim.velocity({ opacity: 0 }, { display: "none", delay: 1500 })
  }, 100);
@@ -194,9 +194,4 @@ $('.inline-form').submit(function (event) {
     })
   }//else
 
-}) 
-
-
-
-
-
+})

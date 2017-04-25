@@ -8,12 +8,15 @@
   justify-content: space-between;
   @include breakpoint(medium) {
     flex-direction: row;
-  } 
+  }
 }
 
 .news-grid_item{
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 1rem;
   background-color:$light-gray;
   border-radius: 4px;
@@ -28,8 +31,8 @@
   &:hover{
      background-color: darken($light-gray, 5%);
      cursor: pointer;
-    .news-grid_thumb{
-      background-size: 120%;
+    .news-grid_zoom{
+      transform: scale(1.2);
     }
     .news-grid_deets{
       h3{color: $blue}
@@ -37,20 +40,29 @@
   }//hover
   @include breakpoint(medium) {
     width: 30%;
+    max-width: 400px;
     margin-bottom: 0;
   }
 }
 
 .news-grid_thumb{
+  display: block;
+  position: relative;
   width: 100%;
   height: 250px;
-  background-size: 100%;
-  background-position: center center;
-  transition: all .3s ease-in-out;
+  overflow: hidden;
 
 }
+.news-grid_zoom{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all .3s ease-in-out;
+}
+
 .news-grid_deets{
-  height: 225px;
   display: flex;
   flex-direction:column ;
   justify-content: space-between;
@@ -64,8 +76,9 @@
 
 .news-grid_meta{
   width: 100%;
+  padding:.5rem 1rem;
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  bottom: 10px ; left: 16px;
+  font-size: 0.8rem;;
+
 }
