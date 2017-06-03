@@ -12,7 +12,7 @@
     transition: all .3s ease;
     z-index: 100;
     @include breakpoint(medium) {
-     display: flex; 
+     display: flex;
      padding: 0 2rem;
     }
 }
@@ -94,8 +94,12 @@
   transition: transform .5s ease;
 }
 .nav-brand_swap{
-  max-height: 30px;
+  max-height: 45px;
   transition: transform .5s ease;
+}
+
+.is-sticky .nav-brand_swap {
+  max-height: 35px;
 }
 
 .is-sticky .nav-brand{

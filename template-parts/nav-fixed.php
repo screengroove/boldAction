@@ -11,12 +11,12 @@
     </a>
     <div class="nav-links">
       <a href="/news" >News</a>
-      <a href="/#member-section" >Members</a> 
+      <a href="/#member-section" >Members</a>
       <a href="/#candidate-section" >Candidates</a>
       <a href="#footer">Contact</a>
       <a href="https://www.facebook.com/chcboldpac" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
       <a href="https://twitter.com/chcboldpac" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a id="ribbon" href="https://secure.actblue.com/contribute/page/donatebold" target="_blank" class="ribbon white">
+      <a id="ribbon" href="https://secure.actblue.com/contribute/page/bold-homepage?refcode=homepage-donate&amounts=15,25,50,100,250,500,1000&amount=25&recurring=true" target="_blank" class="ribbon white">
         <div class="btn">Donate</div>
       </a>
     </div>

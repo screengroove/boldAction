@@ -11,6 +11,7 @@ const navMobileLinks = $('.nav-mobile a');
 const skrim = $('.skrim');
 const facts = $('.fact');
 const donate = $('#ribbon');
+const donateMbl = $('#ribbon-mbl');
 const circle = $('.circle');
 const check = $('.check');
 const postURL =
